@@ -1,0 +1,547 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #676767;
+   position: fixed;
+   width: 100%;
+   height: 70px;
+   
+}
+
+.home{
+    color: rgb(0, 0, 0);
+    background-image: url(../src/img/cidade\ de\ pallet.png);
+    background-size: cover;
+    height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: end;
+    padding: 110px 0px 170px;
+    align-items: center;
+    font-weight: 600;
+    
+}
+.menu .barra .pokedex{
+    margin-right: 30px;
+}
+.menu img{
+    max-width: 100px;
+    max-height: 100px;
+    
+}
+.container-pokemon{
+    display: flex;
+    flex-wrap: wrap;
+   align-items: center;
+   padding: 130px 90px 0px;
+   
+}
+
+button{
+    padding: 5px 200px 5px;
+    position: relative;
+    margin-left: 310px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 95px;
+    background-color: #282828;
+    color: white;
+}
+button:hover{
+    background-color: rgb(124, 124, 124);
+    transform: scale(1.2);
+    transition:0.6s;
+}
+.container-pokemon .pokemons .pokemon img{
+    max-width: 200px;
+    max-height: 150px;
+    margin-left: 35px;
+    padding: 15px;
+    align-items: center;
+    
+    
+}
+
+.container-pokemon .pokemons .pokemon{
+    width: 250px;
+    height: 400px;
+    background-color: rgb(124, 124, 124);
+    display: none;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.container-pokemon .pokemons .pokemon{
+    margin: 15px;
+    
+}
+.container-pokemon .pokemons .pokemon.ativo{
+    display: block;
+}
+.mostrar.remover{
+    display: none;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   text-align: center;
+   padding: 10px;
+   font-weight: 600;
+    
+}
+.pokemon .tipo{
+    display: flex;
+    margin-left: 15px;
+}
+
+
+.pokemon .info{
+    text-align: center;
+    padding: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 500;
+    
+    
+}
+.planta{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: green;
+    border-radius: 10px;
+    margin-left: 15px;
+    font-weight: 500;
+
+}.tipo.unico .planta{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: green;
+    border-radius: 10px;
+    margin-left: 65px;
+    font-weight: 500;
+}
+
+
+.veneno{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    margin-left: 15px;
+    font-weight: 500;
+}
+.tipo.unico .fogo{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: orange;
+    border-radius: 10px;
+    margin-left: 65px;
+    font-weight: 500;
+}
+
+.pokemon .tipo:hover{
+    color: white;
+    cursor: pointer;
+}
+p{
+    display: none;
+    font-weight: 900;
+}
+
+.container-pokemon .pokemons .pokemon:hover{
+    background-color: rgba(202, 202, 202, 0.927);
+    color: rgb(0, 0, 0);
+    height: 570px;
+    transition: 0.6s;
+    border: 2px solid black;
+}
+.pokemon:hover p{
+    display: block;
+}
+.container-pokemon .pokemons .pokemon .fraqueza{
+    display: none;
+    
+}
+.container-pokemon .pokemons .pokemon:hover .fraqueza{
+    color: rgb(38, 38, 38);
+    display: block;
+}
+.container-pokemon .pokemons .pokemon .fraqueza img{
+   padding: 0px;
+ 
+}
+.voador{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgba(85, 155, 235, 0.626);
+    border-radius: 10px;
+    margin-left: 15px;
+    font-weight: 500;
+}
+.tipo.unico .voador{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgba(85, 155, 235, 0.626);
+    border-radius: 10px;
+    margin-left: 65px;
+    font-weight: 500;
+}
+.fogo{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: orange;
+    border-radius: 10px;
+    margin-left: 15px;
+    font-weight: 500;
+}
+.tipo.unico .fogo{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: orange;
+    border-radius: 10px;
+    margin-left: 65px;
+    font-weight: 500;
+}
+.agua{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(17, 73, 228);;
+    border-radius: 10px;
+    margin-left: 15px;
+    font-weight: 500;
+}
+.tipo.unico .agua{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(17, 73, 228);
+    border-radius: 10px;
+    margin-left: 65px;
+    font-weight: 500;
+}
+.inseto{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(107, 224, 71);
+    border-radius: 10px;
+    margin-left: 15px;
+    font-weight: 500;
+}
+.tipo.unico .inseto{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(107, 224, 71);
+    border-radius: 10px;
+    margin-left: 65px;
+    font-weight: 500;
+}
+
+.normal{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(161, 161, 161);
+    border-radius: 10px;
+    margin-left: 15px;
+    font-weight: 500;
+}
+.tipo.unico .normal{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(161, 161, 161);
+    border-radius: 10px;
+    margin-left: 65px;
+    font-weight: 500;
+}
+.lutador{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(183, 62, 62);
+    border-radius: 10px;
+    margin-left: 15px;
+    font-weight: 500;
+}
+.tipo.unico .lutador{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(183, 62, 62);
+    border-radius: 10px;
+    margin-left: 65px;
+    font-weight: 500;
+}
+.dark{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(49, 44, 44);
+    border-radius: 10px;
+    margin-left: 15px;
+    font-weight: 500;
+}
+.tipo.unico .dark{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(49, 44, 44);
+    border-radius: 10px;
+    margin-left: 65px;
+    font-weight: 500;
+}
+.fada{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(231, 0, 243);
+    border-radius: 10px;
+    margin-left: 15px;
+    font-weight: 500;
+}
+.tipo.unico .fada{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(247, 111, 240);
+    border-radius: 10px;
+    margin-left: 65px;
+    font-weight: 500;
+}
+.dragão{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(0, 68, 255);
+    border-radius: 10px;
+    margin-left: 15px;
+    font-weight: 500;
+}
+.tipo.unico .dragão{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(0, 68, 255);
+    border-radius: 10px;
+    margin-left: 65px;
+    font-weight: 500;
+}
+.terra{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(255, 106, 0);
+    border-radius: 10px;
+    margin-left: 15px;
+    font-weight: 500;
+}
+.tipo.unico .terra{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(255, 106, 0);
+    border-radius: 10px;
+    margin-left: 65px;
+    font-weight: 500;
+}
+.pedra{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(226, 157, 88);
+    border-radius: 10px;
+    margin-left: 15px;
+    font-weight: 500;
+}
+.tipo.unico .pedra{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(226, 157, 88);
+    border-radius: 10px;
+    margin-left: 65px;
+    font-weight: 500;
+}
+.eletrico{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(255, 247, 0);
+    border-radius: 10px;
+    margin-left: 15px;
+    font-weight: 500;
+}
+.tipo.unico .eletrico{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(255, 247, 0);
+    border-radius: 10px;
+    margin-left: 65px;
+    font-weight: 500;
+}
+.aço{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(73, 167, 230);
+    border-radius: 10px;
+    margin-left: 15px;
+    font-weight: 500; 
+}
+.tipo.unico .aço{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(73, 167, 230);
+    border-radius: 10px;
+    margin-left: 65px;
+    font-weight: 500;
+}
+.fantasma{
+    height: 30px;
+    width: 95px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(112, 49, 247);
+    border-radius: 10px;
+    margin-left: 15px;
+    font-weight: 500;  
+}
+.tipo.unico .fantasma{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(112, 49, 247);
+    border-radius: 10px;
+    margin-left: 65px;
+    font-weight: 500;
+}
+.psiquico{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(231, 0, 115);
+    border-radius: 10px;
+    margin-left: 15px;
+    font-weight: 500;  
+}
+.tipo.unico .psiquico{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(231, 0, 115);
+    border-radius: 10px;
+    margin-left: 65px;
+    font-weight: 500;
+}
+.gelo{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(136, 201, 231);
+    border-radius: 10px;
+    margin-left: 15px;
+    font-weight: 500;  
+}
+.tipo.unico .gelo{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(136, 201, 231);
+    border-radius: 10px;
+    margin-left: 65px;
+    font-weight: 500;
+}
+.tipo.unico .veneno{
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    margin-left: 65px;
+    font-weight: 500;
+}
