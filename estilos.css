@@ -11,7 +11,7 @@ nav{
 
 .home{
     color: rgb(0, 0, 0);
-    background-image: url(../src/img/cidade\ de\ pallet.png);
+    background-image: url(cidade\ de\ pallet.png);
     background-size: cover;
     height: 100vh;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -33,7 +33,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
    align-items: center;
-   padding: 130px 90px 0px;
+   padding: 130px 120px 0px;
    
 }
 
