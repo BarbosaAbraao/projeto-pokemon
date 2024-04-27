@@ -221,7 +221,7 @@
         color: white;
     }
     .container-pokemon .pokemons .pokemon{
-        width: 1px;
+        width: 240px;
         height: 400px;
         background-color: rgb(124, 124, 124);
         display: none;
