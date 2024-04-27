@@ -186,7 +186,7 @@
         display: flex;
         flex-wrap: wrap;
        align-items: center;
-       padding: 75px 70px 0px;
+       padding: 75px 75px 0px;
        
     }
     
@@ -200,6 +200,16 @@
         background-color: #282828;
         color: white;
     }
+.container-pokemon .pokemons .pokemon{
+        width: 250px;
+        height: 400px;
+        background-color: rgb(124, 124, 124);
+        display: none;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+    
+}
 }
 @media( max-width:399px){
     .container-pokemon{
